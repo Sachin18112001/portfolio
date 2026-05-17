@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sachin Natikar | Software Developer</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* Gradient Text */
+
+.gradient-text{
+background:linear-gradient(45deg,#3b82f6,#10b981);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* Hero Glow Background */
+
+.hero-glow::before{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:#3b82f6;
+border-radius:50%;
+top:-120px;
+right:-120px;
+opacity:0.25;
+filter:blur(120px);
+}
+
+.hero-glow::after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+background:#10b981;
+border-radius:50%;
+bottom:-120px;
+left:-120px;
+opacity:0.25;
+filter:blur(120px);
+}
+
+/* Floating Animation */
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0px);}
+}
+
+.floating{
+animation:float 4s ease-in-out infinite;
+}
+
+</style>
+
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 via-white to-green-50 text-gray-800">
+
+<!-- NAVBAR -->
+
+<header class="fixed w-full bg-white shadow z-50">
+
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+<a href="#" class="text-2xl font-bold gradient-text">
+Sachin Natikar
+</a>
+
+<nav class="hidden md:flex space-x-8 font-medium">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero-glow min-h-screen flex items-center pt-20 relative overflow-hidden">
+
+<div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+
+<div class="md:w-1/2">
+
+<h1 class="text-5xl font-bold mb-4">
+Hi, I'm <span class="gradient-text">Sachin</span>
+</h1>
+
+<h2 class="text-3xl mb-6 font-semibold">
+Software Developer
+</h2>
+
+<p class="text-gray-600 mb-8">
+I build modern software applications with clean UI and strong backend systems using Flutter, Django and modern technologies.
+</p>
+
+<div class="flex items-center space-x-4">
+
+<a href="#projects"
+class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
+View My Work
+</a>
+
+<a href="https://github.com/Sachin18112001"
+target="_blank"
+class="border border-blue-500 text-blue-500 px-6 py-3 rounded-lg hover:bg-blue-50">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+
+<div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-500 floating">
+
+<img src="Sachin.jpg" class="w-full h-full object-cover">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="py-20 bg-gray-100">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-10">
+About Me
+</h2>
+
+<p class="max-w-3xl mx-auto text-center text-gray-600">
+
+I'm a passionate Software Developer who enjoys building real-world applications.  
+I have experience developing mobile and web apps using Flutter, Django, REST APIs, and MySQL.  
+My focus is on building scalable applications with clean UI and efficient backend systems.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<!-- TECHNICAL SKILLS -->
+
+<div class="mt-10 text-center">
+
+<h3 class="text-2xl font-semibold mb-6">
+Technical Skills
+</h3>
+
+<div class="max-w-3xl mx-auto text-gray-700 space-y-2">
+
+<p><strong>Frontend:</strong> HTML, CSS, JavaScript, Dart, Flutter, Responsive Web Design</p>
+
+<p><strong>Backend & Framework:</strong> Django, Python, REST APIs, Java, </p>
+
+<p><strong>Database:</strong> MySQL, SQL, Postgresql</p>
+
+<p><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn, Excel</p>
+
+<p><strong>Cloud:</strong> AWS Cloud Foundations(EC2, S3, Lambda)</p>
+
+<p><strong>Tools:</strong>GitHub, Postman, Vs Code</p>
+
+</div>
+
+<!-- DOWNLOAD RESUME BUTTON -->
+
+<div class="mt-8">
+
+<a href="Resume.pdf" download
+class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition">
+
+Download Resume
+
+</a>
+
+</div>
+
+</div>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="py-20">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+Projects
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+
+<!-- PROJECT 1 -->
+
+<div class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition">
+
+<img src="evgo.png" class="w-full h-48 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+EV Charging Station Finder
+</h3>
+
+<p class="text-gray-600 mb-4">
+
+A full EV charging station finder and slot booking mobile app built with Flutter and Django. Includes payment integration, Google Maps API and admin panel.
+
+</p>
+
+<div class="flex items-center justify-between mt-4">
+
+<div class="flex gap-2 flex-wrap">
+
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Flutter</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Django</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">MySQL</span>
+
+</div>
+<a href="https://github.com/yourusername/project"
+target="_blank"
+class="text-gray-600 hover:text-black text-2xl">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+</div>
+</div>
+
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition">
+
+<img src="pharmacy.png" class="w-full h-48 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+Pharmacy Management System
+</h3>
+
+<p class="text-gray-600 mb-4">
+
+A web-based system for managing pharmacy inventory, medicine sales, billing, and stock tracking efficiently.
+
+</p>
+
+<div class="flex items-center justify-between mt-4">
+
+<div class="flex gap-2 flex-wrap">
+
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Python</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Tkinters</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">MySQL</span>
+
+</div>
+<a href="https://github.com/Sachin18112001/Pharmacy-Management-System-"
+target="_blank"
+class="text-gray-600 hover:text-black text-2xl">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 3 -->
+
+<div class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition">
+
+<img src="iot.png" class="w-full h-48 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+IoT Smart Sound Detection
+</h3>
+
+<p class="text-gray-600 mb-4">
+
+An IoT-based system that detects sound and automatically turns a bulb ON or OFF using sensors and microcontroller.
+
+</p>
+
+<div class="flex items-center justify-between mt-4">
+
+<div class="flex gap-2 flex-wrap">
+
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">IoT</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Arduino</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Sensors</span>
+
+</div>
+<a href="https://github.com/Sachin18112001/Smart-Light-Controlling-Using-Sound-IoT-"
+target="_blank"
+class="text-gray-600 hover:text-black text-2xl">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 4 -->
+
+<div class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition">
+
+<img src="football.png" class="w-full h-48 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+Football Data Analysis
+</h3>
+
+<p class="text-gray-600 mb-4">
+
+A data analysis project that analyzes football player statistics and match performance using Python and data visualization tools.
+
+</p>
+
+<div class="flex items-center justify-between mt-4">
+
+<div class="flex gap-2 flex-wrap">
+
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Python</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Pandas</span>
+<span class="bg-gray-200 px-3 py-1 rounded text-sm">Matplotlib</span>
+
+</div>
+<a href="https://github.com/Sachin18112001/Football-Data-Analysis"
+target="_blank"
+class="text-gray-600 hover:text-black text-2xl">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-20 bg-gray-100">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-10">
+Contact Me
+</h2>
+
+<div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-10">
+
+<!-- Contact Info -->
+
+<div class="space-y-4">
+
+<p>
+<strong>Email:</strong> 
+<a href="mailto:sachinkohli633@gmail.com" class="text-blue-500">
+sachinkohli633@gmail.com
+</a>
+</p>
+
+<p>
+<strong>Phone:</strong> 
++91 7795174898
+</p>
+
+<p>
+<strong>Location:</strong> 
+Bengaluru, India
+</p>
+
+</div>
+
+<!-- Social Links -->
+
+<div class="flex justify-center gap-6 mt-6 text-2xl">
+
+<a href="https://www.linkedin.com/in/sachin-natikar-014b012a6/" target="_blank"
+class="text-gray-700 hover:text-blue-600 transition">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/Sachin18112001" target="_blank"
+class="text-gray-700 hover:text-black transition">
+<i class="fa-brands fa-github"></i>
+</a>
+
+
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="text-center py-6 bg-gray-200">
+
+<p>
+© 2026 Sachin Natikar
+</p>
+
+</footer>
+
+</body>
+</html>
